@@ -1,0 +1,9 @@
+2025-10-22 01:54:51, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-22 01:54:53, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-22 01:54:54, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-22 01:54:54, MOVE, v:1, k:poo@camisa, mode:BACK
+2025-10-22 01:54:55, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-22 01:54:55, MOVE, v:1, k:poo@roupa, mode:BACK
+2025-10-22 01:54:57, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-22 01:54:57, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-22 01:55:00, MOVE, v:1, k:poo@roupa, mode:BACK
