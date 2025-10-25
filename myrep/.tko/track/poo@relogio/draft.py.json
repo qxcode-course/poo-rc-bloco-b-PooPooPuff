@@ -2,8 +2,63 @@
     "patches": [
         {
             "label": "2025-10-13_21-16-01",
-            "content": "",
+            "content": "@@ -1,429 +0,0 @@\n-class Watch:%0A    def __init__(self,hora:int=0,min:int=0,sec:int=0):%0A        self.__hora=0%0A        self.__min=0%0A        self.__sec=0%0A        self.sethora=hora%0A        self.setmin=min%0A        self.setsec=sec%0A    %0A    def __str__(self):%0A        return f%22%7Bself.__hora%7D:%7Bself.__min%7D:%7Bself.__sec%7D%22%0A%0Adef main():%0A    line=input()%0A    print(%22$%22+line)%0A    args=line.split()%0A%0A    if args%5B0%5D==%22end%22:%0A        break%0A    if args%5B0%5D==%22show%22%0A    \n",
             "lines": "0"
+        },
+        {
+            "label": "2025-10-25_15-43-37",
+            "content": "@@ -302,54 +302,8 @@\n ():%0A\n-    watch=Watch(00,00,00)%0A    while True:%0A    \n     \n@@ -311,28 +311,24 @@\n ine=input()%0A\n-    \n     print(%22$\n@@ -335,20 +335,16 @@\n %22+line)%0A\n-    \n     args\n@@ -357,20 +357,17 @@\n split()%0A\n-    \n+%0A\n     if a\n@@ -389,20 +389,16 @@\n         \n-    \n break%0A  \n@@ -399,20 +399,16 @@\n eak%0A    \n-   \n- \n if args%5B\n@@ -421,30 +421,9 @@\n how%22\n-:\n %0A    \n-        print(watch)\n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-10-25_15-46-35",
+            "content": "@@ -464,18 +464,16 @@\n         \n-el\n if args%5B\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-25_15-47-00",
+            "content": "@@ -415,17 +415,8 @@\n t()%0A\n-        %0A\n     \n@@ -514,12 +514,4 @@\n tch)\n-%0Amain()%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-25_15-47-54",
+            "content": "@@ -256,20 +256,16 @@\n f.__hora\n-:02d\n %7D:%7Bself.\n@@ -269,20 +269,16 @@\n lf.__min\n-:02d\n %7D:%7Bself.\n@@ -286,12 +286,8 @@\n _sec\n-:02d\n %7D%22%0A%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-25_15-48-43",
+            "content": "@@ -26,26 +26,26 @@\n it__(self,ho\n-u\n r\n+a\n :int=0,min:i\n@@ -78,18 +78,18 @@\n elf.__ho\n-u\n r\n+a\n =0%0A     \n@@ -143,23 +143,23 @@\n lf.setho\n-u\n r\n+a\n =ho\n-u\n r\n+a\n %0A       \n@@ -254,18 +254,18 @@\n elf.__ho\n-u\n r\n+a\n :02d%7D:%7Bs\n@@ -301,440 +301,8 @@\n d%7D%22%0A\n-    %0A    def SetHour(self,hour:int):%0A        if 0%3C=hour%3C=23:%0A            self.__hour=hour%0A        else:%0A            print(%22Fail: Invalid hour%22)%0A    %0A    def SetMin(self,min:int):%0A        if 0%3C=min%3C=59:%0A            self.__min=min%0A        else:%0A            print(%22Fail: Invalid minutes%22)%0A%0A    def SetSec(self,sec:int):%0A        if 0%3C=sec%3C=59:%0A            self.__sec=sec%0A        else:%0A            print(%22Fail: Invalid seconds%22)%0A        \n %0Adef\n@@ -477,32 +477,34 @@\n   break%0A        \n+el\n if args%5B0%5D==%22sho\n@@ -536,153 +536,8 @@\n ch)%0A\n-        if args%5B0%5D==%22set%22:%0A            watch.SetHour(int(args%5B1%5D))%0A            watch.SetMin(int(args%5B2%5D))%0A            watch.SetSec(int(args%5B3%5D))%0A\n main\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-25_15-57-52",
+            "content": "@@ -424,27 +424,26 @@\n nt(%22\n-f\n+F\n ail: \n-hora i\n+I\n nvalid\n-a\n+ hour\n %22)%0A \n",
+            "lines": "46"
+        },
+        {
+            "label": "2025-10-25_15-58-20",
+            "content": "@@ -564,29 +564,29 @@\n nt(%22\n-f\n+F\n ail: \n-minuto invalido\n+Invalid minutes\n %22)%0A%0A\n@@ -702,30 +702,29 @@\n nt(%22\n-f\n+F\n ail: \n-segundo invalido\n+Invalid seconds\n %22)%0A \n",
+            "lines": "46"
+        },
+        {
+            "label": "2025-10-25_15-58-55",
+            "content": "@@ -727,297 +727,8 @@\n o%22)%0A\n-    %0A    def NextSec(self):%0A        self.__sec+=1%0A        if self.__sec==60:%0A            self.__sec=0%0A            self.__min+=1%0A            if self.__min==60:%0A                self.__min=0%0A                self.__hour+=1%0A                if self.__hora==24:%0A                    self.__hora=0%0A\n     \n@@ -1113,64 +1113,8 @@\n %5D))%0A\n-        if args%5B0%5D==%22next%22:%0A            watch.NextSec()%0A\n main\n",
+            "lines": "46"
+        },
+        {
+            "label": "2025-10-25_16-01-35",
+            "content": "@@ -1200,34 +1200,32 @@\n   break%0A        \n-el\n if args%5B0%5D==%22sho\n@@ -1253,34 +1253,32 @@\n (watch)%0A        \n-el\n if args%5B0%5D==%22set\n@@ -1406,18 +1406,16 @@\n         \n-el\n if args%5B\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-25_16-03-16",
+            "content": "@@ -915,25 +915,8 @@\n n=0%0A\n-                %0A\n     \n@@ -970,18 +970,18 @@\n elf.__ho\n-u\n r\n+a\n ==24:%0A  \n@@ -999,34 +999,34 @@\n        self.__ho\n-u\n r\n+a\n =0%0A        %0Adef \n@@ -1200,32 +1200,34 @@\n   break%0A        \n+el\n if args%5B0%5D==%22sho\n@@ -1255,32 +1255,34 @@\n (watch)%0A        \n+el\n if args%5B0%5D==%22set\n@@ -1402,32 +1402,34 @@\n gs%5B3%5D))%0A        \n+el\n if args%5B0%5D==%22nex\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-10-25_16-03-58",
+            "content": "class Watch:\n    def __init__(self,hour:int=0,min:int=0,sec:int=0):\n        self.__hour=0\n        self.__min=0\n        self.__sec=0\n        self.sethour=hour\n        self.setmin=min\n        self.setsec=sec\n    \n    def __str__(self):\n        return f\"{self.__hour:02d}:{self.__min:02d}:{self.__sec:02d}\"\n    \n    def SetHour(self,hour:int):\n        if 0<=hour<=23:\n            self.__hour=hour\n        else:\n            print(\"fail: hora invalida\")\n    \n    def SetMin(self,min:int):\n        if 0<=min<=59:\n            self.__min=min\n        else:\n            print(\"fail: minuto invalido\")\n\n    def SetSec(self,sec:int):\n        if 0<=sec<=59:\n            self.__sec=sec\n        else:\n            print(\"fail: segundo invalido\")\n    \n    def NextSec(self):\n        self.__sec+=1\n        if self.__sec==60:\n            self.__sec=0\n            self.__min+=1\n            if self.__min==60:\n                self.__min=0\n                \n                self.__hour+=1\n                if self.__hour==24:\n                    self.__hour=0\n        \ndef main():\n    watch=Watch(00,00,00)\n    while True:\n        line=input()\n        print(\"$\"+line)\n        args=line.split()\n        \n        if args[0]==\"end\":\n            break\n        if args[0]==\"show\":\n            print(watch)\n        if args[0]==\"set\":\n            watch.SetHour(int(args[1]))\n            watch.SetMin(int(args[2]))\n            watch.SetSec(int(args[3]))\n        if args[0]==\"next\":\n            watch.NextSec()\nmain()\n",
+            "lines": "60"
         }
     ]
 }
