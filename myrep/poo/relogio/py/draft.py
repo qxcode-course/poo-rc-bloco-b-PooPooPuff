@@ -3,12 +3,21 @@ class Watch:
         self.__hour=0
         self.__min=0
         self.__sec=0
-        self.sethour=hour
-        self.setmin=min
-        self.setsec=sec
+        self.SetHour(hour)
+        self.SetMin(min)
+        self.SetSec(sec)
     
-    def __str__(self):
+    def __str__(self)->str:
         return f"{self.__hour:02d}:{self.__min:02d}:{self.__sec:02d}"
+    
+    def GetHour(self)->int:
+        return self.__hour
+    
+    def GetMin(self)->int:
+        return self.__min
+    
+    def GetSec(self)->int:
+        return self.__sec
     
     def SetHour(self,hour:int):
         if 0<=hour<=23:
@@ -35,13 +44,12 @@ class Watch:
             self.__min+=1
             if self.__min==60:
                 self.__min=0
-                
                 self.__hour+=1
                 if self.__hour==24:
                     self.__hour=0
         
 def main():
-    watch=Watch(00,00,00)
+    watch=Watch(0,0,0)
     while True:
         line=input()
         print("$"+line)
@@ -49,12 +57,17 @@ def main():
         
         if args[0]=="end":
             break
-        if args[0]=="show":
+        elif args[0]=="show":
             print(watch)
-        if args[0]=="set":
+        elif args[0]=="set":
             watch.SetHour(int(args[1]))
             watch.SetMin(int(args[2]))
             watch.SetSec(int(args[3]))
-        if args[0]=="next":
+        elif args[0]=="init":
+            watch=Watch(int(args[1]),int(args[2]),int(args[3]))
+        elif args[0]=="next":
             watch.NextSec()
+        else:
+            print("Comando invalido")
+
 main()
