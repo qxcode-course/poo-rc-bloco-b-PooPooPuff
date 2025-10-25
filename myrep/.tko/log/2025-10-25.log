@@ -37,3 +37,19 @@
 2025-10-25 16:36:24, MOVE, v:1, k:poo@relogio, mode:BACK
 2025-10-25 16:38:11, SELF, v:1, k:poo@relogio, rate:100, iagen:Ajuda_do_gpt_pra_entender_que_burrada_que_eu_tava_fazendo_que_n_funcionava_o_init_direito, alone:9
 2025-10-25 16:39:03, SELF, v:1, k:poo@relogio, rate:100, iagen:Ajuda_do_gpt_pra_entender_que_burrada_que_eu_tava_fazendo_que_n_funcionava_o_init_direito, alone:9, study:90
+2025-10-25 16:40:53, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-25 16:40:55, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:0
+2025-10-25 17:02:37, MOVE, v:1, k:poo@motoca, mode:BACK
+2025-10-25 23:20:52, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-25 23:20:58, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-25 23:21:28, MOVE, v:1, k:poo@roupa, mode:BACK
+2025-10-25 23:22:01, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-25 23:28:37, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:13
+2025-10-25 23:34:07, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:29
+2025-10-25 23:35:29, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:31
+2025-10-25 23:36:49, EXEC, v:1, k:poo@roupa, mode:FULL, rate:100, size:34
+2025-10-25 23:36:55, MOVE, v:1, k:poo@roupa, mode:BACK
+2025-10-25 23:38:55, SELF, v:1, k:poo@roupa, rate:100, other:Utilizei_de_um_IDE_anteriormente_nessa_questao__o_codespace_tava_muito_lerdo_em_carregar_os_codigos__mas_os_cases_e_o_readme_estavam_de_boas_de_ler_entao_foi_mais_tranquilo, alone:10, study:70
+2025-10-25 23:43:17, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-25 23:43:54, EXEC, v:1, k:poo@roupa, mode:FULL, rate:100
+2025-10-25 23:43:56, MOVE, v:1, k:poo@roupa, mode:BACK
