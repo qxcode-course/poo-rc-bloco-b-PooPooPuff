@@ -2,8 +2,28 @@
     "patches": [
         {
             "label": "2025-10-13_21-15-53",
-            "content": "",
+            "content": "@@ -1,228 +0,0 @@\n-class Roupa:%0A    def __init__(self):%0A        self.__tamanho:str=%22%22%0A    %0A    def __str__(self):%0A        return %0A%0Adef main():%0A    roupa=Roupa()%0A    while True:%0A        line=input()%0A        print(%22$%22+line)%0A        args=line.split()\n",
             "lines": "0"
+        },
+        {
+            "label": "2025-10-25_23-28-37",
+            "content": "@@ -107,597 +107,122 @@\n urn \n-f%22size: %7Bself.__tamanho%7D%22%0A%0A    def GetTamanho(self)-%3Estr:%0A        return self.__tamanho%0A    %0A    def SetTamanho(self,tamanho:str):%0A        tamanho_disponivel=%5B%22PP%22,%22P%22,%22M%22,%22G%22,%22GG%22,%22XG%22%5D%0A        if tamanho in tamanho_disponivel:%0A            self.__tamanho=tamanho%0A        else:%0A            print(%22fail: Valor inv%C3%A1lido, tente PP, P, M, G, GG ou XG%22)%0A%0Adef main():%0A    roupa=Roupa()%0A    while True:%0A        line=input()%0A        print(%22$%22+line)%0A        args=line.split()%0A%0A        if args%5B0%5D==%22end%22:%0A            break%0A        if args%5B0%5D==%22show%22:%0A            print(roupa)%0A        if args%5B0%5D==%22size%22:\n+%0A%0Adef main():%0A    roupa=Roupa()%0A    while True:%0A        line=input()%0A        print(%22$%22+line)%0A        args=line.split()\n",
+            "lines": "13"
+        },
+        {
+            "label": "2025-10-25_23-34-07",
+            "content": "@@ -700,49 +700,4 @@\n ze%22:\n-%0A            roupa.SetTamanho(args%5B1%5D)%0Amain()\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-25_23-35-29",
+            "content": "@@ -92,87 +92,8 @@\n f):%0A\n-        if self.__tamanho==%22%22:%0A            return %22size: ()%22%0A        else:%0A    \n     \n@@ -111,17 +111,16 @@\n f%22size: \n-(\n %7Bself.__\n@@ -127,17 +127,16 @@\n tamanho%7D\n-)\n %22%0A%0A    d\n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-10-25_23-36-49",
+            "content": "class Roupa:\n    def __init__(self):\n        self.__tamanho:str=\"\"\n    \n    def __str__(self):\n        if self.__tamanho==\"\":\n            return \"size: ()\"\n        else:\n            return f\"size: ({self.__tamanho})\"\n\n    def GetTamanho(self)->str:\n        return self.__tamanho\n    \n    def SetTamanho(self,tamanho:str):\n        tamanho_disponivel=[\"PP\",\"P\",\"M\",\"G\",\"GG\",\"XG\"]\n        if tamanho in tamanho_disponivel:\n            self.__tamanho=tamanho\n        else:\n            print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\n\ndef main():\n    roupa=Roupa()\n    while True:\n        line=input()\n        print(\"$\"+line)\n        args=line.split()\n\n        if args[0]==\"end\":\n            break\n        if args[0]==\"show\":\n            print(roupa)\n        if args[0]==\"size\":\n            roupa.SetTamanho(args[1])\nmain()",
+            "lines": "34"
         }
     ]
 }

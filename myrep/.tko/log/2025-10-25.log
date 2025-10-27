@@ -1,0 +1,55 @@
+2025-10-25 15:11:12, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-25 15:19:52, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0
+2025-10-25 15:43:36, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-25 15:43:37, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:21
+2025-10-25 15:46:35, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:22
+2025-10-25 15:47:00, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:22
+2025-10-25 15:47:03, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0
+2025-10-25 15:47:05, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0
+2025-10-25 15:47:54, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:24
+2025-10-25 15:48:43, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:24
+2025-10-25 15:57:52, EXEC, v:1, k:poo@relogio, mode:FULL, rate:30, size:46
+2025-10-25 15:58:20, EXEC, v:1, k:poo@relogio, mode:FULL, rate:38, size:46
+2025-10-25 15:58:55, EXEC, v:1, k:poo@relogio, mode:FULL, rate:61, size:46
+2025-10-25 16:01:35, EXEC, v:1, k:poo@relogio, mode:FULL, rate:53, size:59
+2025-10-25 16:03:16, EXEC, v:1, k:poo@relogio, mode:FULL, rate:53, size:59
+2025-10-25 16:03:58, EXEC, v:1, k:poo@relogio, mode:FULL, rate:76, size:60
+2025-10-25 16:04:06, MOVE, v:1, k:poo@relogio, mode:BACK
+2025-10-25 16:05:43, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-25 16:14:37, EXEC, v:1, k:poo@relogio, mode:FULL, rate:76
+2025-10-25 16:16:12, EXEC, v:1, k:poo@relogio, mode:FULL, rate:76, size:61
+2025-10-25 16:19:22, EXEC, v:1, k:poo@relogio, mode:FULL, rate:76, size:70
+2025-10-25 16:20:16, EXEC, v:1, k:poo@relogio, mode:FULL, rate:76
+2025-10-25 16:21:31, EXEC, v:1, k:poo@relogio, mode:FULL, rate:76
+2025-10-25 16:22:07, EXEC, v:1, k:poo@relogio, mode:FULL, rate:76, size:70
+2025-10-25 16:22:25, EXEC, v:1, k:poo@relogio, mode:FULL, rate:76, size:70
+2025-10-25 16:23:34, EXEC, v:1, k:poo@relogio, mode:FULL, rate:76, size:70
+2025-10-25 16:24:55, EXEC, v:1, k:poo@relogio, mode:FULL, rate:76, size:71
+2025-10-25 16:25:37, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:72
+2025-10-25 16:25:58, EXEC, v:1, k:poo@relogio, mode:FULL, rate:76, size:72
+2025-10-25 16:27:37, EXEC, v:1, k:poo@relogio, mode:FULL, rate:76, size:72
+2025-10-25 16:29:09, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:72
+2025-10-25 16:29:51, EXEC, v:1, k:poo@relogio, mode:FULL, rate:100, size:73
+2025-10-25 16:31:06, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:72
+2025-10-25 16:34:22, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:73
+2025-10-25 16:35:25, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:73
+2025-10-25 16:36:18, EXEC, v:1, k:poo@relogio, mode:FULL, rate:100, size:73
+2025-10-25 16:36:24, MOVE, v:1, k:poo@relogio, mode:BACK
+2025-10-25 16:38:11, SELF, v:1, k:poo@relogio, rate:100, iagen:Ajuda_do_gpt_pra_entender_que_burrada_que_eu_tava_fazendo_que_n_funcionava_o_init_direito, alone:9
+2025-10-25 16:39:03, SELF, v:1, k:poo@relogio, rate:100, iagen:Ajuda_do_gpt_pra_entender_que_burrada_que_eu_tava_fazendo_que_n_funcionava_o_init_direito, alone:9, study:90
+2025-10-25 16:40:53, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-25 16:40:55, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:0
+2025-10-25 17:02:37, MOVE, v:1, k:poo@motoca, mode:BACK
+2025-10-25 23:20:52, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-25 23:20:58, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0
+2025-10-25 23:21:28, MOVE, v:1, k:poo@roupa, mode:BACK
+2025-10-25 23:22:01, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-25 23:28:37, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:13
+2025-10-25 23:34:07, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:29
+2025-10-25 23:35:29, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:31
+2025-10-25 23:36:49, EXEC, v:1, k:poo@roupa, mode:FULL, rate:100, size:34
+2025-10-25 23:36:55, MOVE, v:1, k:poo@roupa, mode:BACK
+2025-10-25 23:38:55, SELF, v:1, k:poo@roupa, rate:100, other:Utilizei_de_um_IDE_anteriormente_nessa_questao__o_codespace_tava_muito_lerdo_em_carregar_os_codigos__mas_os_cases_e_o_readme_estavam_de_boas_de_ler_entao_foi_mais_tranquilo, alone:10, study:70
+2025-10-25 23:43:17, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-25 23:43:54, EXEC, v:1, k:poo@roupa, mode:FULL, rate:100
+2025-10-25 23:43:56, MOVE, v:1, k:poo@roupa, mode:BACK
