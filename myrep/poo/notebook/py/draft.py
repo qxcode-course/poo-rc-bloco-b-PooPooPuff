@@ -1,6 +1,7 @@
 class Notebook:
     def __init__(self):
         self.__ligado:bool=False
+        self.__bateria:Bateria|None=None
 
     def ligar(self):
         if self.__ligado:
@@ -35,6 +36,28 @@ class Notebook:
         else:
             print(f"notebook sendo utilizado por {tempo} minutos")
 
+class Bateria:
+    def __init__(self, capacidade:int):
+        self.__capacidade:int=capacidade
+        self.__carga:int=capacidade
+    
+    def getcarga(self):
+        return self.__carga
+
+    def getcapacidade(self):
+        return self.__capacidade
+
+    def setcarga(self, valor:int)->int:
+        if valor<0:
+            print("fail: valor inválido")
+            self.__carga=0
+            return
+        elif valor>self.__capacidade:
+            self.__carga=self.__capacidade
+        else:
+            self.__carga+=valor
+        
+
 def main():
     notebook=Notebook()
     while True:
@@ -53,4 +76,10 @@ def main():
             notebook.ligar()
         if args[0]=="desligar":
             notebook.desligar()
+        if args[0]=="carregar":
+        
+        if args[0]=="inserir bateria":
+        
+        if args[0]=="remover bateria":
+
 main()
