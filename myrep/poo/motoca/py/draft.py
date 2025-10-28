@@ -60,7 +60,10 @@ class Motoca:
         else:
             self.__time-=distance
 
-
+    def FONFON(self):
+        sound="P"+("e"*self.__power)+"m"
+        print(sound)
+        
 def main():
     motoquinha=Motoca()
     while True:
@@ -90,6 +93,6 @@ def main():
         if args[0]=="drive":
             distance=int(args[1])
             motoquinha.Drive(distance)
-        
-        #if args[0]=="honk":
+        if args[0]=="honk":
+            motoquinha.FONFON()
 main()

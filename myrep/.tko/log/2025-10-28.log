@@ -47,3 +47,24 @@
 2025-10-28 13:49:56, EXEC, v:1, k:poo@motoca, mode:FULL, rate:86, size:94
 2025-10-28 13:50:12, EXEC, v:1, k:poo@motoca, mode:FULL, rate:93, size:95
 2025-10-28 13:50:19, MOVE, v:1, k:poo@motoca, mode:BACK
+2025-10-28 13:50:51, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-28 13:50:52, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:96
+2025-10-28 13:50:57, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0
+2025-10-28 13:51:00, EXEC, v:1, k:poo@motoca, mode:FULL, rate:93, size:96
+2025-10-28 13:52:49, EXEC, v:1, k:poo@motoca, mode:FULL, rate:100, size:98
+2025-10-28 13:52:51, MOVE, v:1, k:poo@motoca, mode:BACK
+2025-10-28 13:54:09, SELF, v:1, k:poo@motoca, rate:100, human:ajuda_da_minha_muie, iagen:muito_GPT_MUITO_MESMO_, alone:5, study:140
+2025-10-28 13:54:14, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-28 13:54:15, EXEC, v:1, k:poo@camisa, mode:LOCK, rate:100
+2025-10-28 13:54:17, MOVE, v:1, k:poo@camisa, mode:BACK
+2025-10-28 13:54:41, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-28 13:54:49, EXEC, v:1, k:poo@camisa, mode:FREE, size:34
+2025-10-28 13:54:57, MOVE, v:1, k:poo@camisa, mode:BACK
+2025-10-28 13:56:50, SELF, v:1, k:poo@camisa, rate:100, other:Copiei_e_colei_o_codigo_da_roupa_ja_que_era_a_mesma_coisa_so_muda_a_adicao_dos_testes, alone:10
+2025-10-28 13:56:59, SELF, v:1, k:poo@roupa, rate:100, other:Utilizei_de_um_IDE_anteriormente_nessa_questao__o_codespace_tava_muito_lerdo_em_carregar_os_codigos__mas_os_cases_e_o_readme_estavam_de_boas_de_ler_entao_foi_mais_tranquilo, alone:10, study:70
+2025-10-28 13:57:05, SELF, v:1, k:poo@camisa, rate:100, other:Copiei_e_colei_o_codigo_da_roupa_ja_que_era_a_mesma_coisa_so_muda_a_adicao_dos_testes, alone:10, study:70
+2025-10-28 13:57:59, SELF, v:1, k:poo@motoca, rate:100, human:ajuda_da_minha_muie, iagen:muito_GPT_mesmo_me_perdi_bastante_nesse_codigo_KK, alone:5, study:140
+2025-10-28 13:58:01, MOVE, v:1, k:poo@charger, mode:PICK
+2025-10-28 13:58:02, MOVE, v:1, k:poo@charger, mode:BACK
+2025-10-28 13:58:03, MOVE, v:1, k:poo@charger, mode:PICK
+2025-10-28 13:58:31, MOVE, v:1, k:poo@charger, mode:BACK
