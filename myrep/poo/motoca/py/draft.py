@@ -13,8 +13,8 @@ class Person:
         return self.__name
 
 class Motoca:
-    def __init__(self):
-        self.__power=1
+    def __init__(self,power:int=1):
+        self.__power=power
         self.__time=0
         self.__person=None
 
@@ -34,6 +34,11 @@ class Motoca:
         else:
             self.__person=person
             return True
+        
+    def Leave(self):
+        if self.__pessoa==None:
+            print("fail: ")
+
 def main():
     motoquinha=Motoca()
     while True:
@@ -51,8 +56,9 @@ def main():
             person=Person(name,age)
             motoquinha.Enter(person)
         if args[0]=="init":
-            
-        #if args[0]=="leave":
+            power=int(args[1])
+            motoquinha=Motoca(power)
+        if args[0]=="leave":
         
         #if args[0]=="buy":
         
