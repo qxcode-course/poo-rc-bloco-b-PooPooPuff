@@ -107,8 +107,78 @@
         },
         {
             "label": "2025-10-28_13-03-54",
-            "content": "class Person:\n    def __init__(self, name:str, age:int):\n        self.__age=age\n        self.__name=name\n        \n    def __str__(self)->str:\n        return f\"{self.__name}:{self.__age}\"\n    \n    def GetAge(self)->int:\n        return self.__age\n    \n    def GetName(self)->str:\n        return self.__name\n\nclass Motoca:\n    def __init__(self,power:int=1):\n        self.__power=power\n        self.__time=0\n        self.__person=None\n\n    def __str__(self)->str:\n            return f\"power:{self.__power}, time:{self.__time}, person:({self.GetPerson()})\"\n    \n    def GetPerson(self):\n        if self.__person==None:\n            return \"empty\"\n        else:\n            return f\"{self.__person}\"\n\n    def Enter(self, person:Person)->bool:\n        if self.__person!=None:\n            print(\"fail: busy motorcycle\")\n            return False\n        else:\n            self.__person=person\n            return True\ndef main():\n    motoquinha=Motoca()\n    while True:\n        line=input()\n        print(\"$\"+line)\n        args=line.split()\n            \n        if args[0]==\"end\":\n            break\n        if args[0]==\"show\":\n            print(motoquinha)\n        if args[0]==\"enter\":\n            name=args[1]\n            age=int(args[2])\n            person=Person(name,age)\n            motoquinha.Enter(person)\n        if args[0]==\"init\":\n            power=int(args[1])\n            motoquinha=Motoca(power)\n        #if args[0]==\"leave\":\n        \n        #if args[0]==\"buy\":\n        \n        #if args[0]==\"drive\":\n        \n        #if args[0]==\"honk\":\nmain()",
+            "content": "@@ -905,243 +905,8 @@\n rue%0A\n-        %0A    def Leave(self):%0A        if self.__person==None:%0A            print(%22fail: empty motorcycle%22)%0A            return None%0A        else:%0A            person=self.__person%0A            self.__person=None%0A            return person%0A%0A\n def \n@@ -1392,32 +1392,33 @@\n (power)%0A        \n+#\n if args%5B0%5D==%22lea\n@@ -1434,77 +1434,8 @@\n     \n-    motoquinha.Leave()%0A            #if person!=None:%0A                \n %0A   \n",
             "lines": "63"
+        },
+        {
+            "label": "2025-10-28_13-30-38",
+            "content": "@@ -1668,23 +1668,16 @@\n         \n-person=\n motoquin\n@@ -1699,16 +1699,17 @@\n         \n+#\n if perso\n@@ -1721,39 +1721,8 @@\n ne:%0A\n-                print(%7Bperson%7D)\n     \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-10-28_13-31-49",
+            "content": "@@ -1745,22 +1745,24 @@\n   print(\n+%7B\n person\n+%7D\n )       \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-10-28_13-34-32",
+            "content": "@@ -1138,80 +1138,8 @@\n rson\n-%0A        %0A    def BuyTime(self,time:int)-%3Eint:%0A        self.__time+=time\n %0A%0Ade\n@@ -1769,32 +1769,33 @@\n        %0A        \n+#\n if args%5B0%5D==%22buy\n@@ -1809,65 +1809,8 @@\n     \n-    time=int(args%5B1%5D)%0A            motoquinha=Motoca(time)\n %0A   \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-10-28_13-37-40",
+            "content": "@@ -1924,16 +1924,15 @@\n inha\n-.BuyTime\n+=Motoca\n (tim\n",
+            "lines": "79"
+        },
+        {
+            "label": "2025-10-28_13-39-41",
+            "content": "@@ -1212,184 +1212,8 @@\n me%0A%0A\n-    def Drive(self,distance:int)-%3Eint:%0A        if distance%3Eself.__time:%0A            print(%22fail: buy time first%22)%0A        else:%0A            self.__time-=distance%0A            %0A%0A\n def \n@@ -1935,32 +1935,33 @@\n e(time)%0A        \n+#\n if args%5B0%5D==%22dri\n@@ -1969,81 +1969,8 @@\n e%22:%0A\n-            distance=int(args%5B1%5D)%0A            motoquinha.Drive(distance)%0A\n     \n",
+            "lines": "79"
+        },
+        {
+            "label": "2025-10-28_13-42-44",
+            "content": "@@ -1326,86 +1326,8 @@\n t%22)%0A\n-        elif self.__person==None:%0A            print(%22fail: empty motorcycle%22)%0A\n     \n@@ -1370,16 +1370,28 @@\n istance%0A\n+            \n %0A%0Adef ma\n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-10-28_13-43-27",
+            "content": "@@ -1404,95 +1404,8 @@\n e%22)%0A\n-        elif self.GetPerson(self.__age)%3E10:%0A            print(%22fail too old to drive%22)%0A\n     \n",
+            "lines": "90"
+        },
+        {
+            "label": "2025-10-28_13-44-46",
+            "content": "@@ -1428,16 +1428,23 @@\n tPerson(\n+self.__\n age)%3E10:\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-10-28_13-45-27",
+            "content": "@@ -1422,24 +1422,21 @@\n elf.\n-__p\n+GetP\n erson\n-.GetA\n+(a\n ge\n-(\n )%3E10\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-10-28_13-46-26",
+            "content": "@@ -1463,17 +1463,16 @@\n nt(%22fail\n-:\n  too old\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-10-28_13-46-36",
+            "content": "@@ -1284,107 +1284,8 @@\n me:%0A\n-            print(f%22fail: time finished after %7Bself.__time%7D minutes%22)%0A        elif self.__time==0:%0A\n     \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-10-28_13-49-32",
+            "content": "@@ -1262,79 +1262,8 @@\n  if \n-self.__time==0:%0A            print(%22fail: buy time first%22)%0A        elif \n dist\n@@ -1350,16 +1350,87 @@\n nutes%22)%0A\n+        elif self.__time==0:%0A            print(%22fail: buy time first%22)%0A\n         \n",
+            "lines": "94"
+        },
+        {
+            "label": "2025-10-28_13-49-56",
+            "content": "@@ -1425,34 +1425,8 @@\n s%22)%0A\n-            self.__time=0%0A\n     \n",
+            "lines": "94"
+        },
+        {
+            "label": "2025-10-28_13-50-12",
+            "content": "class Person:\n    def __init__(self, name:str, age:int):\n        self.__age=age\n        self.__name=name\n        \n    def __str__(self)->str:\n        return f\"{self.__name}:{self.__age}\"\n    \n    def GetAge(self)->int:\n        return self.__age\n    \n    def GetName(self)->str:\n        return self.__name\n\nclass Motoca:\n    def __init__(self,power:int=1):\n        self.__power=power\n        self.__time=0\n        self.__person=None\n\n    def __str__(self)->str:\n            return f\"power:{self.__power}, time:{self.__time}, person:({self.GetPerson()})\"\n    \n    def GetPerson(self):\n        if self.__person==None:\n            return \"empty\"\n        else:\n            return f\"{self.__person}\"\n\n    def Enter(self, person:Person)->bool:\n        if self.__person!=None:\n            print(\"fail: busy motorcycle\")\n            return False\n        else:\n            self.__person=person\n            return True\n        \n    def Leave(self):\n        if self.__person==None:\n            print(\"fail: empty motorcycle\")\n            return None\n        else:\n            person=self.__person\n            self.__person=None\n            return person\n        \n    def BuyTime(self,time:int)->int:\n        self.__time+=time\n\n    def Drive(self,distance:int)->int:\n        if self.__time==0:\n            print(\"fail: buy time first\")\n        elif distance>self.__time:\n            print(f\"fail: time finished after {self.__time} minutes\")\n            self.__time=0\n        elif self.__person==None:\n            print(\"fail: empty motorcycle\")\n        elif self.__person.GetAge()>10:\n            print(\"fail: too old to drive\")\n        else:\n            self.__time-=distance\n\n\ndef main():\n    motoquinha=Motoca()\n    while True:\n        line=input()\n        print(\"$\"+line)\n        args=line.split()\n            \n        if args[0]==\"end\":\n            break\n        if args[0]==\"show\":\n            print(motoquinha)\n        if args[0]==\"enter\":\n            name=args[1]\n            age=int(args[2])\n            person=Person(name,age)\n            motoquinha.Enter(person)\n        if args[0]==\"init\":\n            power=int(args[1])\n            motoquinha=Motoca(power)\n        if args[0]==\"leave\":\n            person=motoquinha.Leave()\n            if person!=None:\n                print(person)                \n        if args[0]==\"buy\":\n            time=int(args[1])\n            motoquinha.BuyTime(time)\n        if args[0]==\"drive\":\n            distance=int(args[1])\n            motoquinha.Drive(distance)\n        \n        #if args[0]==\"honk\":\nmain()",
+            "lines": "95"
         }
     ]
 }

@@ -36,8 +36,30 @@ class Motoca:
             return True
         
     def Leave(self):
-        if self.__pessoa==None:
-            print("fail: ")
+        if self.__person==None:
+            print("fail: empty motorcycle")
+            return None
+        else:
+            person=self.__person
+            self.__person=None
+            return person
+        
+    def BuyTime(self,time:int)->int:
+        self.__time+=time
+
+    def Drive(self,distance:int)->int:
+        if self.__time==0:
+            print("fail: buy time first")
+        elif distance>self.__time:
+            print(f"fail: time finished after {self.__time} minutes")
+            self.__time=0
+        elif self.__person==None:
+            print("fail: empty motorcycle")
+        elif self.__person.GetAge()>10:
+            print("fail: too old to drive")
+        else:
+            self.__time-=distance
+
 
 def main():
     motoquinha=Motoca()
@@ -59,10 +81,15 @@ def main():
             power=int(args[1])
             motoquinha=Motoca(power)
         if args[0]=="leave":
-        
-        #if args[0]=="buy":
-        
-        #if args[0]=="drive":
+            person=motoquinha.Leave()
+            if person!=None:
+                print(person)                
+        if args[0]=="buy":
+            time=int(args[1])
+            motoquinha.BuyTime(time)
+        if args[0]=="drive":
+            distance=int(args[1])
+            motoquinha.Drive(distance)
         
         #if args[0]=="honk":
 main()
