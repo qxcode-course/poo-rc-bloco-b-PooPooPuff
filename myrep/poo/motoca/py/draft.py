@@ -1,5 +1,5 @@
 class Person:
-    def __init__(self, age:int, name:str):
+    def __init__(self, name:str, age:int):
         self.__age=age
         self.__name=name
         
@@ -19,11 +19,14 @@ class Motoca:
         self.__person=None
 
     def __str__(self)->str:
-        if self.__person==None:
-            return f"power:{self.__power}, time:{self.__time}, person:(empty)"
-        else:
-            return f"power:{self.__power}, time:{self.__time}, person:({self.__pessoa})"
+            return f"power:{self.__power}, time:{self.__time}, person:({self.GetPerson()})"
     
+    def GetPerson(self):
+        if self.__person==None:
+            return "empty"
+        else:
+            return f"{self.__person}"
+
     def Enter(self, person:Person)->bool:
         if self.__person!=None:
             print("fail: busy motorcycle")
@@ -42,4 +45,18 @@ def main():
             break
         if args[0]=="show":
             print(motoquinha)
+        if args[0]=="enter":
+            name=args[1]
+            age=int(args[2])
+            person=Person(name,age)
+            motoquinha.Enter(person)
+        if args[0]=="init":
+            
+        #if args[0]=="leave":
+        
+        #if args[0]=="buy":
+        
+        #if args[0]=="drive":
+        
+        #if args[0]=="honk":
 main()

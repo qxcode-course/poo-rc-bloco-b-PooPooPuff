@@ -47,8 +47,63 @@
         },
         {
             "label": "2025-10-28_01-43-00",
-            "content": "class Person:\n    def __init__(self, age:int, name:str):\n        self.__age=age\n        self.__name=name\n        \n    def __str__(self)->str:\n        return f\"{self.__name}:{self.__age}\"\n    \n    def GetAge(self)->int:\n        return self.__age\n    \n    def GetName(self)->str:\n        return self.__name\n\nclass Motoca:\n    def __init__(self):\n        self.__power=1\n        self.__time=0\n        self.__person=None\n\n    def __str__(self)->str:\n        if self.__person==None:\n            return f\"power:{self.__power}, time:{self.__time}, person:(empty)\"\n        else:\n            return f\"power:{self.__power}, time:{self.__time}, person:({self.__pessoa})\"\n    \n    def Enter(self, person:Person)->bool:\n        if self.__person!=None:\n            print(\"fail: busy motorcycle\")\n            return False\n        else:\n            self.__person=person\n            return True\ndef main():\n    motoquinha=Motoca()\n    while True:\n        line=input()\n        print(\"$\"+line)\n        args=line.split()\n            \n        if args[0]==\"end\":\n            break\n        if args[0]==\"show\":\n            print(motoquinha)\nmain()",
+            "content": "@@ -1113,93 +1113,8 @@\n ha)%0A\n-        if args%5B0%5D==%22enter%22:%0A            motoquinha.Enter(str(args%5B1%5D),int(args%5B2%5D))%0A\n main\n",
             "lines": "45"
+        },
+        {
+            "label": "2025-10-28_12-33-05",
+            "content": "@@ -430,32 +430,64 @@\n r__(self)-%3Estr:%0A\n+        if self.__person==None:%0A\n             retu\n@@ -545,135 +545,100 @@\n on:(\n-%7Bself.GetPerson%7D\n+empty\n )%22%0A    \n-%0A\n     \n-def GetPerson(self):%0A        if self.__person==None:%0A            return %22(empty)%22%0A        return f%22\n+else:%0A            return f%22power:%7Bself.__power%7D, time:%7Bself.__time%7D, person:\n (%7Bse\n@@ -648,16 +648,20 @@\n __pe\n-rson\n+ssoa\n %7D)%22%0A\n+    \n %0A   \n@@ -1183,186 +1183,22 @@\n %5B1%5D)\n-)%0A        if args%5B0%5D==%22init%22:%0A        %0A        if args%5B0%5D==%22leave%22:%0A        %0A        if args%5B0%5D==%22buy%22:%0A        %0A        if args%5B0%5D==%22drive%22:%0A        %0A        if args%5B0%5D==%22honk%22:\n+,int(args%5B2%5D))\n %0Amai\n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-10-28_12-43-07",
+            "content": "@@ -1166,16 +1166,28 @@\n a.Enter(\n+str(args%5B1%5D)\n )%0A      \n@@ -1180,33 +1180,32 @@\n gs%5B1%5D))%0A        \n-#\n if args%5B0%5D==%22ini\n@@ -1217,33 +1217,32 @@\n        %0A        \n-#\n if args%5B0%5D==%22lea\n@@ -1255,33 +1255,32 @@\n        %0A        \n-#\n if args%5B0%5D==%22buy\n@@ -1291,33 +1291,32 @@\n        %0A        \n-#\n if args%5B0%5D==%22dri\n@@ -1341,9 +1341,8 @@\n     \n-#\n if a\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-10-28_12-43-30",
+            "content": "@@ -1141,93 +1141,8 @@\n r%22:%0A\n-            name=args%5B1%5D%0A            age=args%5B2%5D%0A            person=Person(name,age)%0A\n     \n@@ -1166,22 +1166,16 @@\n a.Enter(\n-person\n )%0A      \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-10-28_12-49-43",
+            "content": "@@ -524,18 +524,16 @@\n etPerson\n-()\n %7D)%22%0A    \n@@ -1182,20 +1182,15 @@\n age=\n-int(\n args%5B2%5D\n-)\n %0A   \n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-28_12-52-06",
+            "content": "@@ -621,34 +621,16 @@\n empty)%22%0A\n-        else:%0A    \n         \n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-28_12-53-14",
+            "content": "@@ -616,13 +616,15 @@\n rn %22\n+(\n empty\n+)\n %22%0A  \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-10-28_12-53-36",
+            "content": "@@ -646,32 +646,33 @@\n        return f%22\n+(\n %7Bself.__person%7D%22\n@@ -670,16 +670,17 @@\n _person%7D\n+)\n %22%0A%0A    d\n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-10-28_12-53-59",
+            "content": "@@ -1169,24 +1169,20 @@\n     \n-age=int(\n+name=\n args%5B\n-2%5D)\n+1%5D\n %0A   \n@@ -1186,36 +1186,40 @@\n             \n-name=\n+age=int(\n args%5B\n-1%5D\n+2%5D)\n %0A           \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-10-28_12-54-13",
+            "content": "@@ -34,25 +34,25 @@\n lf, \n-name:str, age:int\n+age:int, name:str\n ):%0A \n@@ -659,24 +659,22 @@\n  f%22%7B\n-Person(age,name)\n+self.__person%7D\n %22%0A%0A \n@@ -1169,20 +1169,24 @@\n     \n-name=\n+age=int(\n args%5B\n-1%5D\n+2%5D)\n %0A   \n@@ -1194,32 +1194,28 @@\n         \n-age=int(\n+name=\n args%5B\n-2%5D)\n+1%5D\n %0A       \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-10-28_12-56-34",
+            "content": "@@ -659,22 +659,24 @@\n  f%22%7B\n-self.__person%7D\n+Person(age,name)\n %22%0A%0A \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-10-28_12-56-52",
+            "content": "class Person:\n    def __init__(self, name:str, age:int):\n        self.__age=age\n        self.__name=name\n        \n    def __str__(self)->str:\n        return f\"{self.__name}:{self.__age}\"\n    \n    def GetAge(self)->int:\n        return self.__age\n    \n    def GetName(self)->str:\n        return self.__name\n\nclass Motoca:\n    def __init__(self):\n        self.__power=1\n        self.__time=0\n        self.__person=None\n\n    def __str__(self)->str:\n            return f\"power:{self.__power}, time:{self.__time}, person:({self.GetPerson()})\"\n    \n    def GetPerson(self):\n        if self.__person==None:\n            return \"empty\"\n        else:\n            return f\"{self.__person}\"\n\n    def Enter(self, person:Person)->bool:\n        if self.__person!=None:\n            print(\"fail: busy motorcycle\")\n            return False\n        else:\n            self.__person=person\n            return True\ndef main():\n    motoquinha=Motoca()\n    while True:\n        line=input()\n        print(\"$\"+line)\n        args=line.split()\n            \n        if args[0]==\"end\":\n            break\n        if args[0]==\"show\":\n            print(motoquinha)\n        if args[0]==\"enter\":\n            name=args[1]\n            age=int(args[2])\n            person=Person(name,age)\n            motoquinha.Enter(person)\n        #if args[0]==\"init\":\n        \n        #if args[0]==\"leave\":\n        \n        #if args[0]==\"buy\":\n        \n        #if args[0]==\"drive\":\n        \n        #if args[0]==\"honk\":\nmain()",
+            "lines": "62"
         }
     ]
 }

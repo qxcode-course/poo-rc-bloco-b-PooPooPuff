@@ -11,8 +11,8 @@ sources:
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   type: remote
   branch: master
-  cache_path: C:\Users\Luis Pupu\Desktop\poo-rc-bloco-b-PooPooPuff\myrep\.tko\cache\poo.md
-  cache_timestamp: '2025-10-27 20:32:41'
+  cache_path: /workspaces/poo-rc-bloco-b-PooPooPuff/myrep/.tko/cache/poo.md
+  cache_timestamp: '2025-10-28 12:23:27'
   filters:
   - acesso
   - simples
@@ -27,6 +27,7 @@ tasks:
   poo@relogio: '{rate:100, iagen:Ajuda_do_gpt_pra_entender_que_burrada_que_eu_tava_fazendo_que_n_funcionava_o_init_direito,
 
     alone:9, study:90}'
+  poo@motoca: '{rate:6}'
 flags:
   quests: 0
   tracks: 0
