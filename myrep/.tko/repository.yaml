@@ -25,6 +25,7 @@ tasks:
     alone:10, study:70}'
   poo@relogio: '{rate:100, iagen:Ajuda_do_gpt_pra_entender_que_burrada_que_eu_tava_fazendo_que_n_funcionava_o_init_direito,
     alone:9, study:90}'
+  poo@motoca: '{rate:6}'
 flags:
   quests: 0
   tracks: 0

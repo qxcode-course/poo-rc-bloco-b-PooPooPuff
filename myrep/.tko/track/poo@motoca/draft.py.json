@@ -2,8 +2,53 @@
     "patches": [
         {
             "label": "2025-10-25_16-40-55",
-            "content": "",
+            "content": "@@ -1,658 +0,0 @@\n-class Person:%0A    def __init__(self, age:int, name:str):%0A        self.__age=age%0A        self.__name=name%0A        %0A    def __str__(self)-%3Estr:%0A        return f%22%7Bself.__name%7D:%7Bself.__age%7D%22%0A    %0A    def GetAge(self)-%3Eint:%0A        return self.__age%0A    %0A    def GetName(self)-%3Estr:%0A        return self.__name%0A%0Aclass Motoca:%0A    def __init__(self):%0A        self.__time=0%0A        self.__power=1%0A        self.__pessoa=%0A%0Adef main():%0A    motoquinha=Motoca()%0A    while True:%0A        line=input()%0A        print(%22$%22+line)%0A        args=line.split()%0A            %0A        if args%5B0%5D==%22end%22:%0A            break%0A        if args%5B0%5D==%22show%22:%0A            print(motoquinha)%0Amain()\n",
             "lines": "0"
+        },
+        {
+            "label": "2025-10-28_01-34-42",
+            "content": "@@ -408,12 +408,8 @@\n soa=\n-None\n %0A%0Ade\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-28_01-34-48",
+            "content": "@@ -414,120 +414,8 @@\n ne%0A%0A\n-    def __str__(self)-%3Estr:%0A        return f%22power:%7Bself.__power%7D, time:%7Bself.__time%7D, person:%7Bself.__pessoa%7D%22%0A%0A\n def \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-28_01-35-58",
+            "content": "@@ -442,136 +442,8 @@\n tr:%0A\n-        if self.__pessoa=None:%0A            return f%22power:%7Bself.__power%7D, time:%7Bself.__time%7D, person:(empty)%22%0A        else:%0A    \n     \n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-28_01-37-18",
+            "content": "@@ -463,17 +463,16 @@\n _pessoa=\n-=\n None:%0A  \n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-28_01-37-36",
+            "content": "@@ -633,17 +633,16 @@\n  person:\n-(\n %7Bself.__\n@@ -648,17 +648,16 @@\n _pessoa%7D\n-)\n %22%0A%0Adef m\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-28_01-37-57",
+            "content": "@@ -356,15 +356,14 @@\n f.__\n-power=1\n+time=0\n %0A   \n@@ -366,38 +366,39 @@\n %0A        self.__\n-time=0\n+power=1\n %0A        self.__\n@@ -399,20 +399,20 @@\n elf.__pe\n-rson\n+ssoa\n =None%0A%0A \n@@ -458,20 +458,20 @@\n elf.__pe\n-rson\n+ssoa\n ==None:%0A\n@@ -656,153 +656,8 @@\n %7D)%22%0A\n-    %0A    def Enter(self, person:Person)-%3Ebool:%0A        if self.__person=True:%0A            print(%22fail: busy motorcycle%22)%0A            return False\n %0Adef\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-28_01-41-55",
+            "content": "@@ -727,13 +727,12 @@\n rson\n-!=Non\n+=Tru\n e:%0A \n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-10-28_01-42-13",
+            "content": "@@ -803,79 +803,8 @@\n lse%0A\n-        else:%0A            self.__person=person%0A            return True%0A\n def \n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-10-28_01-43-00",
+            "content": "class Person:\n    def __init__(self, age:int, name:str):\n        self.__age=age\n        self.__name=name\n        \n    def __str__(self)->str:\n        return f\"{self.__name}:{self.__age}\"\n    \n    def GetAge(self)->int:\n        return self.__age\n    \n    def GetName(self)->str:\n        return self.__name\n\nclass Motoca:\n    def __init__(self):\n        self.__power=1\n        self.__time=0\n        self.__person=None\n\n    def __str__(self)->str:\n        if self.__person==None:\n            return f\"power:{self.__power}, time:{self.__time}, person:(empty)\"\n        else:\n            return f\"power:{self.__power}, time:{self.__time}, person:({self.__pessoa})\"\n    \n    def Enter(self, person:Person)->bool:\n        if self.__person!=None:\n            print(\"fail: busy motorcycle\")\n            return False\n        else:\n            self.__person=person\n            return True\ndef main():\n    motoquinha=Motoca()\n    while True:\n        line=input()\n        print(\"$\"+line)\n        args=line.split()\n            \n        if args[0]==\"end\":\n            break\n        if args[0]==\"show\":\n            print(motoquinha)\nmain()",
+            "lines": "45"
         }
     ]
 }
