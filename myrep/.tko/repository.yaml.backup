@@ -22,8 +22,10 @@ expanded:
 - poo@bloco_b-agregação-simples
 tasks:
   poo@roupa: '{rate:100, other:Utilizei_de_um_IDE_anteriormente_nessa_questao__o_codespace_tava_muito_lerdo_em_carregar_os_codigos__mas_os_cases_e_o_readme_estavam_de_boas_de_ler_entao_foi_mais_tranquilo,
+
     alone:10, study:70}'
   poo@relogio: '{rate:100, iagen:Ajuda_do_gpt_pra_entender_que_burrada_que_eu_tava_fazendo_que_n_funcionava_o_init_direito,
+
     alone:9, study:90}'
 flags:
   quests: 0
